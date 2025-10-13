@@ -1,5 +1,7 @@
 package programmers.lessons2;
 
+import java.util.HashMap;
+
 public class P94_250511_ModeValue {
     /*
     문제 설명
@@ -47,6 +49,29 @@ public class P94_250511_ModeValue {
         // 0. 배열의 원소가 1개뿐이라면 1을 바로 리턴
         // 1. 배열을 순회하며 해당 숫자와, 카운트를 같이 저장, 만약 이전에 저장된값이라면 count ++ ,
         //      아니라면 해당숫자 : 카운트 0 으로 저장. > 2차원 배열 이용 > 2차원배열대신 해쉬맵 HashMap<Integer,Integer> 이용으로변경함 더나은자료구조
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : array){
+            map.put(num, map.getOrDefault(num,0) + 1);
+        }
+
+        int maxCount = 0;
+        int modeValue = -1 ; // 최빈값, 초기값 -1로 설정
+        boolean isMultiple = false;
+
+        // 순회하며 최빈값을 찾기.
+        for (int key : map.keySet()) {
+
+            if (map.get(key) > maxCount) {
+                modeValue = key;
+                maxCount = map.get(key);
+
+            } else if (maxCount == map.get(key)) {
+                isMultiple = true;
+
+            }
+
+        }
+        answer = isMultiple ? -1 : modeValue;
         // 2. 배열을 순회하며 각 숫자의 카운트 증가
         // 3. 결과 배열들의 카운트 비교하여, 같은게 있다면, -1 , 같은게 없다면 : 해당 카운트 리턴 ,
         return answer;
