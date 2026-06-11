@@ -30,7 +30,31 @@ public class P04_240599_Savings {
     // ===== 내 풀이 =====
     public static int solution(int start, int before, int after) {
         // TODO: 직접 풀어보세요.
-        return 0;
+        // pesudo 1 : 70을 before 로 나눈 개월 수를 구한다 > 반복문의 length 로 사용.
+        // pesudo 2 : 반복문을 돌면서 70 이하가 될때 까지 더한다.
+        // pesudo 3 : 두 번째 반복문을 돌면서 after 를 더한다.
+        // pesudo 4 : 위 과정을 거치면서 month 도 ++ 같이 증가시켜준다.
+        int startMoney = start;
+        int beforeMoney = before;
+        int afterMoney = after;
+        int targetMoney = 70;
+        int month = 0;
+        int endMoney = 100;
+
+        // XXX : 최초 for 문으로 시작하려했고, 그에따라 length 를 어떤기준으로 삼을지 고민했지만, 문제에는 특정 조건 까지 연산하는 내용이었기에
+        // for 문보다는 while 문이 더 적합하다. 이부분에 있어서 고민이 많았음. for 문으로 풀어보려 했지만, while 문이 더 자연스럽게 느껴짐.
+
+        while (startMoney <= targetMoney) {
+            startMoney += beforeMoney;
+            month++;
+        }
+
+        while (startMoney <= endMoney){
+            startMoney += afterMoney;
+            month++;
+        }
+
+        return month;
     }
 
 
