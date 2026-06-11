@@ -43,7 +43,7 @@ public class P08_240603_WarehouseOrganize {
     // ===== 내 풀이 =====
     public static String solution(String[] storage, int[] num) {
         // TODO: 직접 풀어보세요.
-        return "";
+        return null;
     }
 
 

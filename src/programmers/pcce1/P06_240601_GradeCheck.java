@@ -39,7 +39,7 @@ public class P06_240601_GradeCheck {
     // ===== 내 풀이 =====
     public static String[] solution(int[] numbers, int[] our_score, int[] score_list) {
         // TODO: 직접 풀어보세요.
-        return new String[numbers.length];
+        return null;
     }
 
 

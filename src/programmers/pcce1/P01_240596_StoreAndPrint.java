@@ -28,14 +28,7 @@ public class P01_240596_StoreAndPrint {
 
     // ===== 내 풀이 =====
     public static void solve() {
-        // TODO: msg, val1, val2 에 알맞은 값을 넣어 출력 예시와 같게 만드세요.
-        String msg = "";
-        int val1 = 0;
-        String val2 = "";
-
-        System.out.println(msg);
-        System.out.println(val1 + 10);
-        System.out.println(val2 + "10");
+        // TODO: 직접 풀어보세요.
     }
 
 

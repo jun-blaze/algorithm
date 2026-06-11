@@ -42,7 +42,7 @@ public class P10_240605_DataAnalysis {
     // ===== 내 풀이 =====
     public static int[][] solution(int[][] data, String ext, int val_ext, String sort_by) {
         // TODO: 직접 풀어보세요.
-        return new int[0][];
+        return null;
     }
 
 

@@ -33,7 +33,7 @@ public class P05_240600_Walk {
     // ===== 내 풀이 =====
     public static int[] solution(String route) {
         // TODO: 직접 풀어보세요.
-        return new int[]{0, 0};
+        return null;
     }
 
 
