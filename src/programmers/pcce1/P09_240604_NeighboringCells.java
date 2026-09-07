@@ -35,13 +35,25 @@ public class P09_240604_NeighboringCells {
                 {"blue", "green", "yellow"},
                 {"yellow", "blue", "blue"}
         };
+
         System.out.println("Expected: 2 -> " + solution(board1, 1, 1));
         System.out.println("Expected: 1 -> " + solution(board2, 0, 1));
     }
 
     // ===== 내 풀이 =====
     public static int solution(String[][] board, int h, int w) {
-        // TODO: 직접 풀어보세요.
+        // TODO : 1.풀이
+        // pesudo 1 : 주어진 board 의 길이를 구하고 선언할당한다.
+        // pesudo 2 : h , w 의 상하좌우 좌표를 구한다??. (방향 벡터 활용)
+        // pesudo 3 : 해당 좌표 상하좌위의 좌표를 구한다. (좌우는. h , w 를 활용하여 +1 , -1 한다.)
+        // pesudo 4 : 구한 좌표가 board 범위 안에 있는지   확인한다. (범위 안에 있다면, board[h][w] 와 같은 색인지 확인한다.)
+        // pesudo 5 : 같은 색이라면 카운트를 증가시킨다.
+
+
+
+
+
+
         return 0;
     }
 
